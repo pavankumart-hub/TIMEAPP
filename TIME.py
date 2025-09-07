@@ -7,7 +7,7 @@ import time
 
 # Set page config
 st.set_page_config(
-    page_title="Nifty 50 Stock Analysis",
+    page_title="NIFTY 50 INDIA Stock Analysis",
     page_icon="📊",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -195,4 +195,5 @@ st.caption(f"Data from Yahoo Finance | Analysis from {start_date} to {datetime.n
 if auto_refresh:
     st.write(f"Auto-refresh enabled: will refresh every {refresh_interval} minutes")
     time.sleep(refresh_interval * 60)
+
     st.experimental_rerun()
