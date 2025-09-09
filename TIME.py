@@ -197,3 +197,4 @@ if auto_refresh:
     time.sleep(refresh_interval * 60)
 
     st.experimental_rerun()
+
